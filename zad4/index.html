@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zad4 - Navigation Bar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+              integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+              crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="menuContainer collapsible collapsible-expanded">
+                <i class='menu_icon bx bx-menu'></i>
+                <ul class="menu_items collapsible_content">
+                    <li>
+                        <a class="menu_list" href="#" onclick="expandSubMenu()">Link 1</a>
+                        <ul class="sub_menu_items">
+                            <li>
+                                <a class="first_sub menu_list" href="#">Link 1.1</a>
+                            </li>
+                            <li>
+                                <a class="menu_list" href="#">Link 1.2</a>
+                            </li>
+                            <li>
+                                <a class="last_sub menu_list" href="#">Link 1.1</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu_list" href="#">Link 2</a>
+                    </li>
+                    <li>
+                        <a class="menu_list" href="#">Link 3</a>
+                    </li>
+                    <li>
+                        <a class="menu_list" href="#">Link 4</a>
+                    </li>
+                    <li class="menu_last-element">
+                        <a class="menu_list" href="#">Link 5</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="main">
+            <div class="column">
+                <h1>Title</h1>
+                <hr>
+                <h2>Subtitle</h2>
+                <img src="https://images.pexels.com/photos/4577368/pexels-photo-4577368.png?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1">
+                <hr>
+            </div>
+            <div class="column">
+                <table class="table_countries">
+                    <tbody><tr>
+                        <th>Kraj</th>
+                        <th>Miasto</th>
+                        <th>Atrakcja</th>
+                    </tr>
+                    <tr>
+                        <td>Polska</td>
+                        <td>Gdynia</td>
+                        <td>Sea Tower</td>
+                    </tr>
+                    <tr>
+                        <td>Francja</td>
+                        <td>Paryż</td>
+                        <td>Wieża Eiffla</td>
+                    </tr>
+                    <tr>
+                        <td>Wielka Brytania</td>
+                        <td>Londyn</td>
+                        <td>Big Ben</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr>
+                <form class="form" method="POST" action="javascript:alert('Submitted')">
+                    <div class="formColumnWrapper">
+                        <div class="formColumn">
+                            <fieldset>
+                                <legend>DANE OSOBOWE</legend>
+                                <label for="name">Imie: </label><input id="name" type="text"
+                                                                       placeholder="Marek"><br>
+                                <label for="surname">Nazwisko: </label><input id="surname" type="text"
+                                                                              placeholder="Lewańczyk"><br>
+                                <label for="age">Wiek:</label><input id="age" type="number" min="1" max="99"
+                                                                     placeholder="20"><br>
+                                <label for="select">Wybierz płeć:</label>
+                                <select name="płeć" id="select">
+                                    <option value="mezyczna">Mężczyzna</option>
+                                    <option value="kobieta">Kobieta</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <legend>A B C</legend>
+                                <label for="a">A</label><input id="a" name="ABC" type="radio" value="a"><br>
+                                <label for="b">B</label><input id="b" name="ABC" type="radio" value="b"><br>
+                                <label for="c">C</label><input id="c" name="ABC" type="radio" value="c"><br>
+                            </fieldset>
+                        </div>
+                        <div class="formColumn">
+                            <fieldset>
+                                <legend>CHECKBOXy</legend>
+                                <label for="opcja_1">Opcja 1</label><input id="opcja_1" type="checkbox"
+                                                                           value="1"><br>
+                                <label for="opcja_2">Opcja 2</label><input id="opcja_2" type="checkbox"
+                                                                           value="1"><br>
+                                <label for="opcja_3">Opcja 3</label><input id="opcja_3" type="checkbox"
+                                                                           value="1"><br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>TEXTAREA</legend>
+                                <textarea id="textarea" name="textarea"
+                                          placeholder="Większe pole tekstowe"></textarea>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <input class="submitButton" type="submit">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p class="footerText">To jest stopka</p>
+            <p class="footerText">To jest stopka</p>
+            <p class="footerText">To jest stopka</p>
+        </footer>
+        <script src="navScript.js"></script>
+    </body>
+</html>
