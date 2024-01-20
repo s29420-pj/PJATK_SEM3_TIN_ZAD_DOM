@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zad 6- Lightbox Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="lightbox.js"></script>
+</head>
+<body>
+    <div class="gallery">
+        <img class="thumbnail" src="images/img1.jpg" alt="Image 1" onclick="openLightbox('images/img1.jpg')">
+        <img class="thumbnail" src="images/img2.jpg" alt="Image 2" onclick="openLightbox('images/img2.jpg')">
+        <img class="thumbnail" src="images/img3.jpg" alt="Image 3" onclick="openLightbox('images/img3.jpg')">
+        <img class="thumbnail" src="images/img4.jpg" alt="Image 4" onclick="openLightbox('images/img4.jpg')">
+    </div>
+    <div class="lightbox" id="lightbox">
+        <span class="close-button" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-image">
+    </div>
+</body>
+</html>
