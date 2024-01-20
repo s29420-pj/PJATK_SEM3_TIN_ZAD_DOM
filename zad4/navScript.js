@@ -13,6 +13,6 @@ function expandSubMenu() {
             subMenu.classList.remove('sub_menu-expanded');
         } else {
             subMenu.classList.add('sub_menu-expanded');
-        }
+
     });
 }
